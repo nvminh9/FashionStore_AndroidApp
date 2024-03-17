@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f6f6f4"
+        android:orientation="vertical"
+        app:layout="@+id/bottomnav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/backbottomnav">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/utahcondensedbold"
+                android:text="BALENCIAGA"
+                android:textColor="#000000"
+                android:textSize="27sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.115"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/btnFind"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="0dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:contentDescription="Home"-->
+<!--                android:minWidth="80dp"-->
+<!--                android:minHeight="48dp"-->
+<!--                android:src="@drawable/iconsearchsmall"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.927"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:layout_constraintVertical_bias="0.533" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f6f6f4"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_tintuc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp" />
+
+                <!--                <HorizontalScrollView-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:scrollbars="none">-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:orientation="horizontal"-->
+                <!--                        android:padding="15dp">-->
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="match_parent"-->
+                <!--                            android:layout_marginRight="20dp"-->
+                <!--                            android:orientation="vertical">-->
+
+                <!--                            <de.hdodenhof.circleimageview.CircleImageView-->
+                <!--                                android:id="@+id/sneaker"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="60dp"-->
+                <!--                                android:src="@drawable/sneakers"-->
+                <!--                                app:civ_border_color="#000"-->
+                <!--                                app:civ_border_width="1dp" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/txtsneaker"-->
+                <!--                                android:layout_width="80dp"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:autoSizeTextType="uniform"-->
+                <!--                                android:padding="10dp"-->
+                <!--                                android:text="Sneakers"-->
+                <!--                                android:textAlignment="center" />-->
+                <!--                        </LinearLayout>-->
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="match_parent"-->
+                <!--                            android:layout_marginRight="20dp"-->
+                <!--                            android:orientation="vertical">-->
+
+                <!--                            <de.hdodenhof.circleimageview.CircleImageView-->
+                <!--                                android:id="@+id/tshirt"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="60dp"-->
+                <!--                                android:src="@drawable/tshirt4"-->
+                <!--                                app:civ_border_color="#000"-->
+                <!--                                app:civ_border_width="1dp" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/txttshirt"-->
+                <!--                                android:layout_width="80dp"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:autoSizeTextType="uniform"-->
+                <!--                                android:padding="10dp"-->
+                <!--                                android:text="T-shirts"-->
+                <!--                                android:textAlignment="center" />-->
+                <!--                        </LinearLayout>-->
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="match_parent"-->
+                <!--                            android:layout_marginRight="20dp"-->
+                <!--                            android:orientation="vertical">-->
+
+                <!--                            <de.hdodenhof.circleimageview.CircleImageView-->
+                <!--                                android:id="@+id/pants"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="60dp"-->
+                <!--                                android:src="@drawable/pants"-->
+                <!--                                app:civ_border_color="#000"-->
+                <!--                                app:civ_border_width="1dp" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/txtpants"-->
+                <!--                                android:layout_width="80dp"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:autoSizeTextType="uniform"-->
+                <!--                                android:padding="10dp"-->
+                <!--                                android:text="Pants"-->
+                <!--                                android:textAlignment="center" />-->
+                <!--                        </LinearLayout>-->
+
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="match_parent"-->
+                <!--                            android:layout_marginRight="20dp"-->
+                <!--                            android:orientation="vertical">-->
+
+                <!--                            <de.hdodenhof.circleimageview.CircleImageView-->
+                <!--                                android:id="@+id/bags"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="60dp"-->
+                <!--                                android:src="@drawable/bags"-->
+                <!--                                app:civ_border_color="#000"-->
+                <!--                                app:civ_border_width="1dp" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/txtbags"-->
+                <!--                                android:layout_width="80dp"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:autoSizeTextType="uniform"-->
+                <!--                                android:padding="10dp"-->
+                <!--                                android:text="Bags"-->
+                <!--                                android:textAlignment="center" />-->
+                <!--                        </LinearLayout>-->
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="match_parent"-->
+                <!--                            android:layout_marginRight="20dp"-->
+                <!--                            android:orientation="vertical">-->
+
+                <!--                            <de.hdodenhof.circleimageview.CircleImageView-->
+                <!--                                android:id="@+id/knitwear"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="60dp"-->
+                <!--                                android:src="@drawable/knitwear"-->
+                <!--                                app:civ_border_color="#000"-->
+                <!--                                app:civ_border_width="1dp" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/txtknitwear"-->
+                <!--                                android:layout_width="80dp"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:autoSizeTextType="uniform"-->
+                <!--                                android:padding="10dp"-->
+                <!--                                android:text="Knitwear"-->
+                <!--                                android:textAlignment="center" />-->
+                <!--                        </LinearLayout>-->
+
+                <!--                        <LinearLayout-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="match_parent"-->
+                <!--                            android:layout_marginRight="20dp"-->
+                <!--                            android:orientation="vertical">-->
+
+                <!--                            <de.hdodenhof.circleimageview.CircleImageView-->
+                <!--                                android:id="@+id/accessories"-->
+                <!--                                android:layout_width="match_parent"-->
+                <!--                                android:layout_height="60dp"-->
+                <!--                                android:src="@drawable/accessories"-->
+                <!--                                app:civ_border_color="#000"-->
+                <!--                                app:civ_border_width="1dp" />-->
+
+                <!--                            <TextView-->
+                <!--                                android:id="@+id/txtaccessories"-->
+                <!--                                android:layout_width="wrap_content"-->
+                <!--                                android:layout_height="wrap_content"-->
+                <!--                                android:autoSizeTextType="uniform"-->
+                <!--                                android:padding="10dp"-->
+                <!--                                android:text="Accessories"-->
+                <!--                                android:textAlignment="center" />-->
+                <!--                        </LinearLayout>-->
+                <!--                    </LinearLayout>-->
+                <!--                </HorizontalScrollView>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcvloaisp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="450dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/homebar_backgr" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

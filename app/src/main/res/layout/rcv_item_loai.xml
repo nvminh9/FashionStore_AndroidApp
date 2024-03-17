@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="110dp"
+    android:layout_height="100dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgLoai"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:src="@drawable/sneakers"
+        app:civ_border_color="#000"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/Loaiid"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:autoSizeTextType="uniform"
+        android:padding="10dp"
+        android:text="Sneakers"
+        android:textAlignment="center" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "617458013146",
+    "firebase_url": "https://appcuahangthoitrang-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "appcuahangthoitrang",
+    "storage_bucket": "appcuahangthoitrang.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617458013146:android:7cc4486dd1406d474d26e3",
+        "android_client_info": {
+          "package_name": "com.example.appshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcRVFfrbIZFI6zktQt6vStPj706iON_jo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
