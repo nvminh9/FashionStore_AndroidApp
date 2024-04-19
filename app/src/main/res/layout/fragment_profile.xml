@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f6f6f4"
+    android:background="#FFFFFF"
     tools:context=".ProfileFragment">
 
     <LinearLayout
@@ -20,7 +20,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/back">
+            android:background="@drawable/backgroundheadercolor">
 
             <TextView
                 android:id="@+id/textView3"
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:fontFamily="@font/utahcondensedbold"
-                android:text="PROFILE"
+                android:text="Hồ sơ"
                 android:textColor="#000000"
                 android:textSize="27sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -139,7 +139,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_weight="1"
-            android:background="@drawable/back_greenbtn"
+            android:background="@drawable/backgroundheadercolor"
             android:fontFamily="sans-serif"
             android:text="LOG OUT"
             android:textColor="@color/black"

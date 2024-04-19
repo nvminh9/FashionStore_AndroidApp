@@ -1,21 +1,16 @@
 package com.example.appshop;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.firestore.DocumentSnapshot;
+import com.example.appshop.models.SanPham;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
@@ -53,10 +48,10 @@ public class ProductActivity extends AppCompatActivity {
         productAdapter = new ProductAdapter(this, sanPhamList);
         recyclerView.setAdapter(productAdapter);
         //*** Loại :
-        ///******************** 1. Get Loại Sneakers  ****************************************************************************************************
-        if(type != null && type.equalsIgnoreCase("Sneakers")){
-            title.setText("Sneakers");
-            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Sneakers").addSnapshotListener(new EventListener<QuerySnapshot>() {
+        ///******************** 1. Get Iphone  ****************************************************************************************************
+        if(type != null && type.equalsIgnoreCase("Iphone")){
+            title.setText("Iphone");
+            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Iphone").addSnapshotListener(new EventListener<QuerySnapshot>() {
                 @Override
                 public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                     if(sanPhamList != null){
@@ -70,10 +65,10 @@ public class ProductActivity extends AppCompatActivity {
                 }
             });
         }
-        ///******************** 2. Get Loại T-shirts  *****************************************************************************************************
-        if(type != null && type.equalsIgnoreCase("T-shirts")){
-            title.setText("T-shirts");
-            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","T-shirts").addSnapshotListener(new EventListener<QuerySnapshot>() {
+        ///******************** 2. Get Samsung  *****************************************************************************************************
+        if(type != null && type.equalsIgnoreCase("Samsung")){
+            title.setText("Samsung");
+            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Samsung").addSnapshotListener(new EventListener<QuerySnapshot>() {
                 @Override
                 public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                     if(sanPhamList != null){
@@ -87,10 +82,10 @@ public class ProductActivity extends AppCompatActivity {
                 }
             });
         }
-        ///******************** 3. Get Loại Pants  ****************************************************************************************************
-        if(type != null && type.equalsIgnoreCase("Pants")){
-            title.setText("Pants");
-            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Pants").addSnapshotListener(new EventListener<QuerySnapshot>() {
+        ///******************** 3. Get Oppo ****************************************************************************************************
+        if(type != null && type.equalsIgnoreCase("Oppo")){
+            title.setText("Oppo");
+            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Oppo").addSnapshotListener(new EventListener<QuerySnapshot>() {
                 @Override
                 public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                     if(sanPhamList != null){
@@ -104,10 +99,10 @@ public class ProductActivity extends AppCompatActivity {
                 }
             });
         }
-        ///******************** 4. Get Loại Bags  ****************************************************************************************************
-        if(type != null && type.equalsIgnoreCase("Bags")){
-            title.setText("Bags");
-            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Bags").addSnapshotListener(new EventListener<QuerySnapshot>() {
+        ///******************** 4. Get  Vivo ****************************************************************************************************
+        if(type != null && type.equalsIgnoreCase("Vivo")){
+            title.setText("Vivo");
+            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Vivo").addSnapshotListener(new EventListener<QuerySnapshot>() {
                 @Override
                 public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                     if(sanPhamList != null){
@@ -121,10 +116,10 @@ public class ProductActivity extends AppCompatActivity {
                 }
             });
         }
-        ///******************** 5. Get Loại Knitwear  ****************************************************************************************************
-        if(type != null && type.equalsIgnoreCase("Knitwear")){
-            title.setText("Knitwear");
-            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Knitwear").addSnapshotListener(new EventListener<QuerySnapshot>() {
+        ///******************** 5. Get Realme  ****************************************************************************************************
+        if(type != null && type.equalsIgnoreCase("Realme")){
+            title.setText("Realme");
+            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Realme").addSnapshotListener(new EventListener<QuerySnapshot>() {
                 @Override
                 public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                     if(sanPhamList != null){
@@ -138,10 +133,10 @@ public class ProductActivity extends AppCompatActivity {
                 }
             });
         }
-        ///******************** 6. Get Loại Accessories  ****************************************************************************************************
-        if(type != null && type.equalsIgnoreCase("Accessories")){
-            title.setText("Accessories");
-            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Accessories").addSnapshotListener(new EventListener<QuerySnapshot>() {
+        ///******************** 6. Get Xiaomi  ****************************************************************************************************
+        if(type != null && type.equalsIgnoreCase("Xiaomi")){
+            title.setText("Xiaomi");
+            firebaseFirestore.collection("SanPham").whereEqualTo("Loai","Xiaomi").addSnapshotListener(new EventListener<QuerySnapshot>() {
                 @Override
                 public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
                     if(sanPhamList != null){

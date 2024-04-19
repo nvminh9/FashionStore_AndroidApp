@@ -9,7 +9,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#f6f6f4"
+        android:background="#FFFFFF"
         android:orientation="vertical"
         app:layout="@+id/bottomnav"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,47 +20,43 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/backbottomnav">
+            android:background="@drawable/backgroundheadercolor">
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:fontFamily="@font/utahcondensedbold"
-                android:text="BALENCIAGA"
-                android:textColor="#000000"
-                android:textSize="27sp"
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="156dp"
+                android:layout_height="56dp"
+                android:src="@drawable/logosplash"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.115"
+                app:layout_constraintHorizontal_bias="0.061"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
-<!--            <ImageButton-->
-<!--                android:id="@+id/btnFind"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_margin="0dp"-->
-<!--                android:background="@android:color/transparent"-->
-<!--                android:contentDescription="Home"-->
-<!--                android:minWidth="80dp"-->
-<!--                android:minHeight="48dp"-->
-<!--                android:src="@drawable/iconsearchsmall"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.927"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintVertical_bias="0.533" />-->
+            <!--            <ImageButton-->
+            <!--                android:id="@+id/btnFind"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_margin="0dp"-->
+            <!--                android:background="@android:color/transparent"-->
+            <!--                android:contentDescription="Home"-->
+            <!--                android:minWidth="80dp"-->
+            <!--                android:minHeight="48dp"-->
+            <!--                android:src="@drawable/iconsearchsmall"-->
+            <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintHorizontal_bias="0.927"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent"-->
+            <!--                app:layout_constraintVertical_bias="0.533" />-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#f6f6f4"
+            android:background="#FFFFFF"
             android:scrollbars="none">
 
             <LinearLayout
@@ -240,16 +236,6 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:padding="5dp" />
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="450dp"
-                    android:layout_height="50dp"
-                    android:layout_marginLeft="-10dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginBottom="10dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/homebar_backgr" />
 
             </LinearLayout>
         </ScrollView>

@@ -9,28 +9,25 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/back"
+        android:background="@drawable/backgroundheadercolor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="52dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="20dp"
-            android:fontFamily="@font/utahcondensedbold"
-            android:text="BALENCIAGA"
-            android:textColor="#000000"
-            android:textSize="36sp"
-            android:textStyle="bold"
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="225dp"
+            android:layout_height="74dp"
+            android:src="@drawable/logosplash"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.571" />
+            app:layout_constraintVertical_bias="0.5"
+             />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
@@ -38,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/utahcondensedbold"
-        android:text="LOGIN"
+        android:text="Đăng nhập"
         android:textColor="#000000"
         android:textSize="28sp"
         android:textStyle="bold"
@@ -89,7 +86,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/utahcondensedbold"
         android:paddingRight="0dp"
-        android:text="Forgot Password"
+        android:text="Quên mật khẩu"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -103,9 +100,10 @@
         android:id="@+id/btnNext"
         android:layout_width="255dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/background_btn"
+        android:background="@drawable/backgroundheadercolor"
         android:fontFamily="@font/utahcondensedbold"
-        android:text="NEXT"
+        android:text="Đăng nhập"
+        android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -120,7 +118,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/background_btn2"
         android:fontFamily="@font/utahcondensedbold"
-        android:text="Create an account"
+        android:text="Tạo tài khoản"
         android:textColor="@color/black"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"

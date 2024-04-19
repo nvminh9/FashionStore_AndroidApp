@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f6f6f4"
+    android:background="#FFFFFF"
     tools:context=".CartFragment">
 
     <LinearLayout
@@ -20,7 +20,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/back">
+            android:background="@drawable/backgroundheadercolor">
 
             <TextView
                 android:id="@+id/titlecart"
@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:fontFamily="@font/utahcondensedbold"
-                android:text="CART"
+                android:text="GIỎ HÀNG"
                 android:textColor="#000000"
                 android:textSize="27sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -58,7 +58,7 @@
                 android:background="@drawable/background_btn"
                 android:fontFamily="@font/utahcondensedbold"
                 android:gravity="center|center_horizontal|center_vertical"
-                android:text="Order"
+                android:text="Đặt hàng"
                 android:textColor="@color/white"
                 android:textSize="23sp"
                 app:backgroundTint="@null" />

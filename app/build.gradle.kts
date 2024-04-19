@@ -83,5 +83,7 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     //Add libary for Picasso ( use for retriev image from firestore with string of url)
     implementation("com.squareup.picasso:picasso:2.71828")
-
+    //Add libary RetroFit to call API
+    implementation("com.squareup.retrofit2:retrofit:2.11.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
 }

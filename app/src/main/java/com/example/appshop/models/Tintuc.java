@@ -1,4 +1,4 @@
-package com.example.appshop;
+package com.example.appshop.models;
 
 public class Tintuc {
 

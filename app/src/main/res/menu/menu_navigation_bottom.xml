@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/tab_home"
-        android:icon="@drawable/iconhomesmall"
+        android:icon="@drawable/mobileshopicon"
         android:title="Home"
         app:iconTint="@null" />
     <item android:id="@+id/tab_favorite" android:title="Favorite" android:icon="@drawable/iconfavsmall"/>

@@ -1,4 +1,4 @@
-package com.example.appshop;
+package com.example.appshop.models;
 
 public class Users {
     private String Email, FullName, Address, Password, imageURL, UserID;
